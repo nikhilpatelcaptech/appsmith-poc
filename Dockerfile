@@ -3,4 +3,4 @@ ENV BASE_DIR=/opt/capillary/appsmith-poc
 RUN echo $BASE_DIR
 RUN mkdir -p $BASE_DIR
 WORKDIR $BASE_DIR
-EXPOSE 80 443
+EXPOSE 80
