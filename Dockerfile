@@ -4,6 +4,6 @@ RUN echo $BASE_DIR
 RUN mkdir -p $BASE_DIR
 COPY entrypoint.sh $BASE_DIR
 RUN chmod +x $BASE_DIR/entrypoint.sh
-ENTRYPOINT ["${BASE_DIR}/entrypoint.sh"]
+ENTRYPOINT ["source", "${BASE_DIR}/entrypoint.sh"]
 WORKDIR $BASE_DIR
 EXPOSE 80
